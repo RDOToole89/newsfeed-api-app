@@ -1,0 +1,20 @@
+.Footer {
+  background: #1d1d1b;
+  color: white;
+  padding: 2em;
+}
+
+.Footer-icon {
+  padding-right: 0.6em;
+}
+
+.Footer-icon-text {
+  display: flex;
+  align-items: center;
+}
+
+.Footer-icon-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

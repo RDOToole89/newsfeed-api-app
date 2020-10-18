@@ -1,12 +1,53 @@
 .Navbar {
   display: flex;
-  background: lightblue;
+  background: #bb1919;
+  padding: 1em;
+  color: white;
+  justify-content: baseline;
+}
+
+.Navbar-container {
+  display: flex;
+}
+
+.Navbar-logo {
+  padding-left: 0.3em;
+  width: 30%;
+}
+
+.Navbar-search {
+  display: flex;
+  width: 40%;
+  align-items: center;
+}
+
+.Navbar-input {
+  width: 80%;
+}
+
+.Navbar-input-icon {
+  padding-left: 0.2em;
 }
 
 .Navbar-ul {
   display: flex;
+  font-weight: 800;
+  color: white;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.Navbar-ul a:visited {
+  color: white;
 }
 
 .Navbar-ul-item {
+  font-size: 1.3rem;
   margin-left: 1em;
+  padding: 0.3em 0;
+  border: 2px solid transparent;
+}
+
+.Navbar-ul-item:hover {
+  border-bottom: 2px solid white;
 }

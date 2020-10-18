@@ -1,7 +1,7 @@
 import { useParams } from "react-router-dom";
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-import { isCompositeComponent } from "react-dom/test-utils";
+import "./ArticleDetails.css";
 
 function ArticleDetails() {
   const params = useParams();
@@ -31,15 +31,27 @@ function ArticleDetails() {
   console.log("RETRIEVED ARTICLE", retrievedArticle.data);
 
   return (
-    <div>
+    <div className="Article-details">
       {retrievedArticle.data ? (
         retrievedArticle.data.map((article) => {
           return (
             <div>
               <h1>{article.title}</h1>
+              <p>{article.publishedAt}</p>
+              <img
+                className="Article-details-img"
+                alt={article.title}
+                src={
+                  article.urlToImage
+                    ? article.urlToImage
+                    : "https://icon-library.com/images/found-icon/found-icon-7.jpg"
+                }
+              />
+              <p>{article.content}</p>
+              <a href={article.url}>Read the full article...</a>
             </div>
           );
-        })
+        })[0]
       ) : (
         <h1>Loading...</h1>
       )}

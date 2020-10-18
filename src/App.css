@@ -5,11 +5,24 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+a:visited {
+  color: #333;
+}
+
+.active {
+  color: white;
+}
+
 ul {
   list-style: none;
 }
 
 .container {
-  max-width: 1200px;
+  width: 1200px;
   margin: 0 auto;
 }

@@ -13,7 +13,9 @@ function Article(props) {
       <h2 className="Article-header">{title}</h2>
       <div className="Article">
         <div className="Article-content">
-          <p className="Article-author">{author}</p>
+          <p className="Article-author">
+            Author: {!author || author === "" ? "Unknown author" : author}
+          </p>
           <p className="Article-description">{description}</p>
 
           <p className="Article-readmore">
