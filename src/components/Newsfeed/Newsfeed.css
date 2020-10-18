@@ -1,0 +1,20 @@
+.Newsfeed-container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.Newsfeed-header {
+  text-align: center;
+  margin-right: 1em;
+}
+
+.Newsfeed-selector {
+  align-self: center;
+}
+
+.Sorting-bar {
+  display: flex;
+  padding: 1.5em;
+  justify-content: center;
+}

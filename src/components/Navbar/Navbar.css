@@ -1,0 +1,12 @@
+.Navbar {
+  display: flex;
+  background: lightblue;
+}
+
+.Navbar-ul {
+  display: flex;
+}
+
+.Navbar-ul-item {
+  margin-left: 1em;
+}

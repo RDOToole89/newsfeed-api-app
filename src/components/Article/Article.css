@@ -1,0 +1,44 @@
+.Article-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  width: 40%;
+  background-color: lightgreen;
+  margin-bottom: 1.5em;
+  margin-left: 1em;
+  padding: 1em;
+}
+
+.Article-header {
+  font-size: 1em;
+}
+
+.Article {
+  font-size: 0.8rem;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  background-color: lightcoral;
+}
+
+.Article-content {
+  width: 40%;
+  padding: 1em;
+}
+
+.Article-imgbox {
+  width: 60%;
+}
+
+.Article-img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  padding: 1.5em;
+}
+
+.Article-source {
+  text-transform: uppercase;
+  font-weight: bold;
+}
