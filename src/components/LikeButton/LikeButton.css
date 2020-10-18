@@ -1,0 +1,17 @@
+.LikeButton {
+  display: flex;
+  width: 100%;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.LikeButton-btn {
+  background-color: transparent;
+  border: none;
+  padding-right: 0.2em;
+}
+
+.LikeButton-icon {
+  cursor: pointer;
+  padding: 0.3em;
+}

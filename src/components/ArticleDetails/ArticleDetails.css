@@ -1,7 +1,7 @@
 .Article-details {
-  height: 75vh;
+  min-height: 100vh;
 }
 
 .Article-details-img {
-  max-width: 90%;
+  max-width: 1000px;
 }

@@ -8,6 +8,12 @@
   margin-bottom: 1.5em;
   margin-left: 1em;
   padding: 1em;
+  transform: scale(1);
+  transition: transform ease-in 200ms;
+}
+
+.Article-container:hover {
+  transform: scale(1.05);
 }
 
 .Article-header {

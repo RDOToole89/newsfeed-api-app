@@ -10,6 +10,10 @@
   display: flex;
 }
 
+.Navbar-background {
+  background-color: #bb1919;
+}
+
 .Navbar-logo {
   padding-left: 0.3em;
   width: 30%;
@@ -21,6 +25,12 @@
   align-items: center;
 }
 
+.Navbar-submit {
+  width: fit-content;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
 .Navbar-input {
   width: 80%;
 }

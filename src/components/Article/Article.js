@@ -1,10 +1,13 @@
 /* eslint-disable jsx-a11y/img-redundant-alt */
-import React from "react";
+import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
+import LikeButton from "../LikeButton/LikeButton";
 import "./Article.css";
 
 function Article(props) {
-  const { title, author, description, image, source } = props;
+  const { title, author, description, image, source, setLikes } = props;
+
+  const [comments, setComments] = useState({});
 
   const article = encodeURIComponent(title);
 
@@ -28,7 +31,8 @@ function Article(props) {
             src={image ? image : "https://icon-library.com/images/found-icon/found-icon-7.jpg"}
             alt="News Image"
           />
-          <p className="Article-source">{source}</p>
+          <p className="Article-source">source: {source}</p>
+          <LikeButton setLikes={setLikes} />
         </div>
       </div>
     </div>

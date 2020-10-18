@@ -13,16 +13,19 @@ function Footer() {
           </h4>
           <h4 className="Footer-icon-text">
             <i className="Footer-icon fab fa-facebook fa-2x"></i>
-            On your mobile
+            On facebook
           </h4>
           <h4 className="Footer-icon-text">
             <i className="Footer-icon fab fa-instagram fa-2x"></i>
-            On your mobile
+            On instagram
           </h4>
           <h4 className="Footer-icon-text">
-            <i className="Footer-icon fab fa-facebook fa-2x"></i>
-            On your mobile
+            <i className="Footer-icon fas fa-envelope fa-2x"></i>
+            Contact us
           </h4>
+        </div>
+        <div className="Footer-copyright">
+          <p className="Footer-copyright-text">Copyright© FAKENews Network</p>
         </div>
       </div>
     </footer>

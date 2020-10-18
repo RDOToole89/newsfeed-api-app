@@ -2,6 +2,8 @@ import { useParams } from "react-router-dom";
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import "./ArticleDetails.css";
+import Navbar from "../Navbar/Navbar";
+import Comments from "../Comments/Comments";
 
 function ArticleDetails() {
   const params = useParams();
@@ -9,6 +11,18 @@ function ArticleDetails() {
   console.log(articleId);
 
   const [retrievedArticle, setRetrievedArticle] = useState({ status: "idle", data: [] });
+  const [comments, setComments] = useState([{ name: "Roibin", body: "Blabla" }]);
+
+  const addComment = (name, body) => {
+    console.log("Adding comment: name, body", name, body);
+    const newComment = {
+      name,
+      body,
+    };
+    setComments([...comments, newComment]);
+  };
+
+  // const mapComments = comments.map((comment) => <Comment name={name} body={body} />);
 
   useEffect(() => {
     console.log("useEffect fired in article details");
@@ -32,6 +46,7 @@ function ArticleDetails() {
 
   return (
     <div className="Article-details">
+      <Navbar />
       {retrievedArticle.data ? (
         retrievedArticle.data.map((article) => {
           return (
@@ -54,6 +69,19 @@ function ArticleDetails() {
         })[0]
       ) : (
         <h1>Loading...</h1>
+      )}
+      <Comments addComment={addComment} />
+      {comments ? (
+        comments.map((comment) => {
+          return (
+            <div>
+              <h4>{comment.name}</h4>
+              <p>{comment.body}</p>
+            </div>
+          );
+        })
+      ) : (
+        <h1>No comments...</h1>
       )}
     </div>
   );
