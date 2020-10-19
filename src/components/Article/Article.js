@@ -1,13 +1,11 @@
 /* eslint-disable jsx-a11y/img-redundant-alt */
-import React, { useState } from "react";
+import React from "react";
 import { NavLink } from "react-router-dom";
 import LikeButton from "../LikeButton/LikeButton";
 import "./Article.css";
 
 function Article(props) {
   const { title, author, description, image, source, setLikes } = props;
-
-  const [comments, setComments] = useState({});
 
   const article = encodeURIComponent(title);
 

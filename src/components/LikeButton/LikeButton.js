@@ -13,7 +13,9 @@ function LikeButton({ setLikes }) {
           setLikes(likeArticle);
         }}
       >
-        <span className="LikeButton-icon">👍</span>
+        <span role="img" aria-label="thumbs up" className="LikeButton-icon">
+          👍
+        </span>
       </button>
       <div className="LikeButton-counter">{likeArticle}</div>
     </div>
